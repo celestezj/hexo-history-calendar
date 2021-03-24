@@ -62,7 +62,7 @@ function common_injector(name, item_comfig, temple_html_text, js_text, css_text)
 hexo.extend.filter.register('after_generate',function() {
     if(hexo.config.history_calendar.enable){
         var history_calendar = hexo.config.history_calendar;
-        if(hexo.config.swiper.enable){
+        if(hexo.config.swiper && hexo.config.swiper.enable){
             var css_text =`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css">`;
             var js_text =`<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script>`
 
