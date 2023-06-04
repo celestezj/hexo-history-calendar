@@ -64,11 +64,11 @@ hexo.extend.filter.register('after_generate',function() {
         var history_calendar = hexo.config.history_calendar;
         if(hexo.config.swiper && hexo.config.swiper.enable){
             var css_text =`<link rel="stylesheet" href="https://cdn.staticaly.com/gh/celestezj/Butterfly-card-history/master/baiduhistory/css/main.min.css">`;
-            var js_text =`<script data-pjax src="https://cdn.staticaly.com/gh/celestezj/Butterfly-card-history/master/baiduhistory/js/main.min.js"></script>`
+            var js_text =`<script data-pjax src="https://cdn.staticaly.com/gh/celestezj/Butterfly-card-history/v1.0/baiduhistory/js/main.min.js"></script>`
 
         }else{
             var css_text =`<link rel="stylesheet" href="https://unpkg.com/swiper@9.3.2/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.staticaly.com/gh/celestezj/Butterfly-card-history/master/baiduhistory/css/main.min.css">`;
-            var js_text =`<script data-pjax  src="https://unpkg.com/swiper@9.3.2/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.staticaly.com/gh/celestezj/Butterfly-card-history/master/baiduhistory/js/main.min.js"></script>`
+            var js_text =`<script data-pjax  src="https://unpkg.com/swiper@9.3.2/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.staticaly.com/gh/celestezj/Butterfly-card-history/v1.0/baiduhistory/js/main.min.js"></script>`
 
         }
         common_injector('history_calendar', history_calendar,history_calendar.temple_html,js_text,css_text)
